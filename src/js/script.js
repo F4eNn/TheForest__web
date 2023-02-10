@@ -10,6 +10,8 @@ const burgerAnimation = () => {
 
 	if (navLinks.classList.contains('is-active')) {
 		body.style.overflow = 'hidden'
+	}else{
+		body.style.overflow = 'scroll'
 	}
 }
 

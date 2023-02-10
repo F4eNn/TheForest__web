@@ -1,6 +1,56 @@
 @use 'colors' as *;
 @use 'general' as *;
 
+@media (min-width: 992px) {
+	footer {
+		.wrapper {
+			padding: 2rem;
+			max-width: 1200px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.footer-box {
+				padding: 0;
+				img {
+					width: 6.5rem;
+				}
+
+				p {
+					font-size: 5rem;
+				}
+			}
+			&__box-items {
+				justify-content: flex-end;
+
+				.box-item {
+					text-align: left;
+					margin-left: 3rem;
+					align-self: flex-start;
+					width: 200px;
+				}
+				.title {
+					font-size: 2.5rem;
+				}
+				.text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.copywrite {
+			height: 6rem;
+			.copywrite-text {
+				font-size: 1.5rem;
+				line-height: 6rem;
+			}
+		}
+	}
+	.about-us {
+		&__img {
+			height: 35rem;
+		}
+	}
+}
+
 @media (min-width: 1200px) {
 	.mobile-nav {
 		display: none;
@@ -38,22 +88,38 @@
 
 	// hero background image
 	.hero {
-		&__text {
-			// left: 30%;
-			// transform: translate(-30%, -50%);
-			p {
-				font-size: 2.2rem;
-			}
-			h1 {
-				font-size: 3.8rem;
-			}
-		}
 		&__img {
 			img {
 				height: 45rem;
 				object-fit: cover;
 				object-position: 0 75%;
 			}
+		}
+	}
+	// #################
+	// About us
+	.about-us {
+		&__title-main{
+			font-size: 4rem;
+			margin: 6rem 0 4rem 0;
+		}
+		&__img {
+			height: 40rem;
+		}
+		&__text-container {
+
+			.description-title {
+				font-size: 3rem;
+			}
+			.description-text {
+				width: 550px;
+				font-size: 2rem;
+				
+			}
+			.second-text{
+				margin-top: 0;
+			}
+			
 		}
 	}
 }

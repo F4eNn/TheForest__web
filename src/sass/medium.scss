@@ -46,19 +46,48 @@
 	}
 	// hero Background image
 	.hero {
-		&__text {
-			p {
-				font-size: 1.6rem;
-			}
-			h1 {
-				font-size: 2.9rem;
-				line-height: 4rem;
-			}
-		}
 		&__img {
 			img {
 				object-fit: cover;
 				object-position: 0 60%;
+			}
+		}
+	}
+	// about us section
+	.about-us {
+		&__box-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__img {
+			width: 100%;
+			margin-left: 3rem;
+		}
+		&__title-main {
+			text-align: center;
+			margin: 3rem 0 3rem 0;
+			font-size: 3rem;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+		&__text-container {
+			text-align: left;
+			margin-left: 3rem;
+			align-self: flex-start;
+			width: 100%;
+
+			.description-title {
+				font-size: 2.5rem;
+			}
+			.description-text {
+				margin: 0;
+			}
+			.second-text {
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
 			}
 		}
 	}

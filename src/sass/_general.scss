@@ -8,12 +8,13 @@
 }
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 
 }
 body {
 	height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: $pure-white;
 }
 a {
 	text-decoration: none;
@@ -28,4 +29,5 @@ a:hover{
 ul,li {
 	list-style: none;
 }
+
 
