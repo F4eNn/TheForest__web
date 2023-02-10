@@ -1,0 +1,65 @@
+@use 'colors' as *;
+@use 'general' as *;
+
+@media (min-width: 768px) {
+	.mobile-nav {
+		display: none;
+	}
+	// Navigation
+	.desktop-nav {
+		display: block;
+		width: 100%;
+		background-color: $pure-white;
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			height: 8rem;
+			.logo-box {
+				display: flex;
+				align-items: start;
+				margin-left: 3rem;
+				cursor: pointer;
+
+				img {
+					width: 4rem;
+				}
+				p {
+					font-size: 3.5rem;
+				}
+			}
+
+			.nav-links {
+				width: 100%;
+				margin-right: 2rem;
+				a {
+					font-size: 1.8rem;
+					padding: 3rem;
+				}
+
+				ul {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+	// hero Background image
+	.hero {
+		&__text {
+			p {
+				font-size: 1.6rem;
+			}
+			h1 {
+				font-size: 2.9rem;
+				line-height: 4rem;
+			}
+		}
+		&__img {
+			img {
+				object-fit: cover;
+				object-position: 0 60%;
+			}
+		}
+	}
+}

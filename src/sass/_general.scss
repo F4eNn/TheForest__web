@@ -1,0 +1,31 @@
+@use 'colors' as *;
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+
+}
+body {
+	height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+}
+a {
+	text-decoration: none;
+	color: $nav-hover-color;
+	padding: 1rem 1.5rem;
+	transition: background-color .3s, color .3s;
+}
+a:hover{
+	background-color: $Links-hover;
+	color: $pure-white;
+}
+ul,li {
+	list-style: none;
+}
+

@@ -1,0 +1,59 @@
+@use 'colors' as *;
+@use 'general' as *;
+
+@media (min-width: 1200px) {
+	.mobile-nav {
+		display: none;
+	}
+	//Desktop Navigation
+	.desktop-nav {
+		display: block;
+		width: 100%;
+		background-color: $pure-white;
+
+		.wrapper {
+			display: flex;
+			align-items: center;
+			height: 9rem;
+
+			.logo-box {
+				display: flex;
+				margin-left: 5rem;
+			}
+			.nav-links {
+				width: 100%;
+				margin-right: 2rem;
+				a {
+					font-size: 1.8rem;
+					padding: 4rem;
+				}
+
+				ul {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
+
+	// hero background image
+	.hero {
+		&__text {
+			// left: 30%;
+			// transform: translate(-30%, -50%);
+			p {
+				font-size: 2.2rem;
+			}
+			h1 {
+				font-size: 3.8rem;
+			}
+		}
+		&__img {
+			img {
+				height: 45rem;
+				object-fit: cover;
+				object-position: 0 75%;
+			}
+		}
+	}
+}
