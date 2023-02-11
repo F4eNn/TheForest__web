@@ -8,6 +8,9 @@
     <title>Forest</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/feather-icons"></script>
 <link rel="stylesheet" href="dist/css/style.min.css"></head>
@@ -28,7 +31,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-us">O nas</a></li>
-                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#offers">Oferta</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -46,14 +49,14 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-us">O nas</a></li>
-                <li><a href="#offer">Oferta</a></li>
+                <li><a href="#offers">Oferta</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
 
     </div>
 </nav>
-<!-- Header -->
+<!-- First Hero_Img -->
 <header class="hero">
     <div class="hero__text">
         <p>Forest Group</p>
@@ -67,7 +70,7 @@
     </div>
     <div class="hero__shadow"></div>
 </header>    <main>
-
+        <!-- About us section -->
         <section class="about-us" id="about-us">
             <div class="wrapper">
                 <h2 class="about-us__title-main">O nas</h2>
@@ -87,24 +90,102 @@
                 </div>
             </div>
         </section>
+        <!-- Second Hero-Img -->
         <section class="hero-img">
+            <div class="hero-img__img">
+                <picture>
+                    <source media="(min-width:992px)" srcset="dist/img/child.desktop.jpg">
+                    <img class="picture" src="dist/img/child.mobile.jpg" alt="dziecko na leśnej drodze">
+                </picture>
+            </div>
+            <div class="hero-img__title-box">
+                <h2 class="title">Przygoda dla całej rodziny</h2>
+            </div>
+            <div class="hero-img__shadow  "></div>
+        </section>
+        <!-- Offers section -->
 
-            <div class="hero-img__shadow wrapper ">
-               
-                    <picture>
-                        <source media="(min-width: 992px)" srcset="dist/img/child.desktop.jpg">
-                        <img class="hero-img__img" src="dist/img/child.mobile.jpg" alt="dziecko na leśnej drodze">
-                    </picture>
+        <section class="offers wrapper " id="offers">
 
-                    <div class="hero-img__container-title">
-                        <div class="title-box">
-                            <h2 class="title">przygoda dla całej rodziny</h2>
-                        </div>
-                    </div>
+            <h2 class="offers__title">Oferta</h2>
+            <p class="offers__text">Wybierz jedną z naszych wspaniałych ofert!</p>
+
+            <div class="offers__container-cards">
+
+                <div class="card">
+                    <h3 class="card__title">Demo</h3>
+                    <p class="card__price">$0</p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__out-of-package card__item"><img class="icon" src="dist/img/minus.svg"> opcja poza
+                        pakietem </p>
+                    <p class="card__out-of-package card__item"><img class="icon" src="dist/img/minus.svg"> opcja poza
+                        pakietem </p>
+                    <p class="card__out-of-package card__item"><img class="icon" src="dist/img/minus.svg"> opcja poza
+                        pakietem </p>
+                    <button class="card__btn">Wybierz</button>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Standard</h3>
+                    <p class="card__price">$99</p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__out-of-package card__item"><img class="icon" src="dist/img/minus.svg"> opcja poza
+                        pakietem </p>
+                    <p class="card__out-of-package card__item"><img class="icon" src="dist/img/minus.svg"> opcja poza
+                        pakietem </p>
+                    <button class="card__btn card__btn--background-color">Wybierz</button>
+
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Premium</h3>
+                    <p class="card__price">$299</p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <p class="card__in-package card__item"><img class="icon" src="dist/img/check.svg"> opcja w pakiecie
+                    </p>
+                    <button class="card__btn">Wybierz</button>
+                </div>
+
+
+
+
+
 
             </div>
 
+            
+            
+            <div class="check-more">
+                <a class="check-more__link" href="offers.html">Więcej naszych ofert!</a>
+                <img src="dist/img/fast-forward.svg">
+            </div>
+
+
         </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,7 +238,7 @@
 
     </div>
     <div class="copywrite">
-        <p class="copywrite-text">&copy;2021 Forest Group Company Ltd.</p>
+        <p class="copywrite-text">&copy;2023 Forest Group Company Ltd.</p>
     </div>
 
 </footer>

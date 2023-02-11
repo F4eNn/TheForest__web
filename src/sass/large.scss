@@ -2,6 +2,9 @@
 @use 'general' as *;
 
 @media (min-width: 992px) {
+	// #######################
+	// 									footer
+	// #######################
 	footer {
 		.wrapper {
 			padding: 2rem;
@@ -49,13 +52,29 @@
 			height: 35rem;
 		}
 	}
-}
+	// #######################
+	// 									Second hero-Img
+	// #######################
+	.hero-img {
+		&__title-box {
+			width: 55rem;
 
+			.title {
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
+// ###########################
+// 										  Media - 1200px
+// ###########################
 @media (min-width: 1200px) {
 	.mobile-nav {
 		display: none;
 	}
-	//Desktop Navigation
+	// #######################
+	//									Desktop Navigation
+	// #######################
 	.desktop-nav {
 		display: block;
 		width: 100%;
@@ -85,8 +104,9 @@
 			}
 		}
 	}
-
-	// hero background image
+	// #######################
+	// 								   First hero-Img
+	// #######################
 	.hero {
 		&__img {
 			img {
@@ -96,10 +116,11 @@
 			}
 		}
 	}
-	// #################
-	// About us
+	// #######################
+	// 								  About us section
+	// #######################
 	.about-us {
-		&__title-main{
+		&__title-main {
 			font-size: 4rem;
 			margin: 6rem 0 4rem 0;
 		}
@@ -107,19 +128,52 @@
 			height: 40rem;
 		}
 		&__text-container {
-
 			.description-title {
 				font-size: 3rem;
 			}
 			.description-text {
 				width: 550px;
 				font-size: 2rem;
-				
 			}
-			.second-text{
+			.second-text {
 				margin-top: 0;
 			}
-			
+		}
+	}
+	// #######################
+	// 								Second hero-Img
+	// #######################
+
+	.hero-img {
+		margin: 6rem 0 6rem 0;
+
+		&__title-box {
+			width: 60rem;
+			height: 8rem;
+
+			.title {
+				font-size: 3rem;
+			}
+		}
+		&__img {
+			.picture {
+				height: 35rem;
+			}
+		}
+	}
+	// ##########################
+	// 									Offers Section
+	// ##########################
+	.offers{
+		.check-more{
+			margin-right: 20rem;
+		}
+		&__title{
+			font-size: 4rem;
+		}
+		&__text{
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
 		}
 	}
 }

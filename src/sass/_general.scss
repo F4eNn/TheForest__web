@@ -9,7 +9,7 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-
+	
 }
 body {
 	height: 100vh;
@@ -18,14 +18,9 @@ body {
 }
 a {
 	text-decoration: none;
-	color: $nav-hover-color;
-	padding: 1rem 1.5rem;
-	transition: background-color .3s, color .3s;
+	
 }
-a:hover{
-	background-color: $Links-hover;
-	color: $pure-white;
-}
+
 ul,li {
 	list-style: none;
 }
